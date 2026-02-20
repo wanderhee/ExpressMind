@@ -180,14 +180,16 @@
             <p class="contribution-paragraph">
               Our contributions can be mainly divided into the following parts:<br>
 
-              <b>1. Model:</b> The research in this paper focuses on improving the recognition ability of MFMs in the complex environment of traffic roads. The model proposed in this paper fine-tunes the various types of events in road traffic, which ensures the model's ability to accurately recognize and reason in road traffic scenarios.<br>
-
-              <b>2. Task:</b> MoTIF outputs structured descriptive text, which enables the detection and analysis of various types of traffic events. The specific inference ability of the multi-modal large model makes it possible to further deduce the traffic state.<br>
-
-              <b>3. Dataset:</b> This paper constructs a multimodal dataset for video understanding of road traffic. We propose a set of automated video annotation methods for traffic target object detection and semantic segmentation fusion for highways. We use Q-A question and answer pairs to annotate roadside surveillance videos of highways.<br>
-
-              <b>4. Benchmark:</b> This work develops a multimodal video analysis benchmark tailored to diverse tasks. For intersection scene understanding, it employs NLG metrics including BLEU-4, ROUGE-L, CIDEr, and semantic relevance metrics such as BERTScore, alongside structured human evaluation. For traffic event detection, classification metrics — Accuracy, Precision, and F1-Score — are utilized.
-            </p>
+              <b>1.Full-stack Expressway dataset: This study constructs the first industry's full-stack expressway dataset spanning text cognition, logical reasoning, and visual perception, including three specialized subsets: traffic knowledge texts, emergency response reasoning, and event video scene understanding.
+                
+              <b>2.RL-aligned CoT Reasoning: We design a RL-based expressway strategy alignment strategy in LLM training, which can significantly enhance the model's logical reasoning and self-correction capabilities.
+                
+              <b>3.Graph-Augmented Retrieval: A graph RAG-based dynamic knowledge base is established for critical expressway information retrieval and indexing.
+                
+              <b>4.Multimodal Alignment mechanism: A Visual-Prior Alignment mechanism is designed by enforcing alignment and reweighting of visual tokens to enhance the understanding of visual features.
+                
+              <b>5.Multi-modal Benchmark: The multi-modal Benchmark for evaluating LLMs within the expressway domain is released, encompassing four evaluation subsets: basic knowledge comprehension, video incident detection, safety response generation, and traffic analysis reporting.
+              </p>
           </div>
       </div>
     </div>
@@ -199,7 +201,7 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-three-quarters">
-        <h3 class="title is-3" style="text-align: center; padding-bottom: 5px; color: rgb(63	172	38)"><bold>Framework Overview of the MoTIF</bold></h3>
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 5px; color: rgb(63	172	38)"><bold>Framework Overview of the ExpressMind</bold></h3>
       </div>
     </div>
   </div>
@@ -214,11 +216,10 @@
         <div class="content">
           <!-- <h2 class="title is-3">Method Overview</h2> -->
           <center>
-          <img src="static/images/framework.png" alt="Framework" class="center-image blend-img-background"/>
+          <img src="static/images/1.png" alt="Framework" class="center-image blend-img-background"/>
           </center>
           <div class="level-set has-text-justified">
             <p>
-              This paper proposes a method to perceive the state of the entire road network for MFM-based traffic scenarios. First, a structured semantic annotation approach is employed for video-image labeling, coupled with traffic video datasets to construct a multi-modal road traffic dataset. The videos and corresponding annotations are fed into the model. A video Q-Former extracts spatiotemporal dynamic features from the videos and aligns visual features with textual information. Finally, the aligned joint features, combined with prompt text, are input into a pre-trained LLM, which outputs traffic scene comprehension text. To further adapt the framework to roadside monitoring scenarios, we implement a traffic scenario-refined fine-tuning strategy using Low-Rank Adaptation (LoRA). Through end-to-end multi-modal alignment and lightweight optimization, this framework provides a high-precision, low-latency, and interpretable traffic scene understanding solution for road network state perception. 
             </p>
           </div>
         </div>
@@ -227,17 +228,6 @@
   </div>
 </section>
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-three-quarters">
-        <h3 class="title is-3" style="text-align: center; padding-bottom: 5px; color: rgb(63	172	38)"><bold>Performance Testing</bold></h3>
-      </div>
-    </div>
-  </div>
-  </div>
-</section>
 
 <section class="hero teaser">
   <div class="container is-max-desktop">
