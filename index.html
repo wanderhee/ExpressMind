@@ -223,6 +223,7 @@
           </center>
           <div class="level-set has-text-justified">
             <p>
+              this paper introduces ExpressMind, a domain multimodal LLM for expressway operation. We construct the first full-stack expressway dataset and propose a two-stage pre-training paradigm for the internalization of expressway-domain knowledge. This study also develops a Reinforcement Learning (RL)-based Chain-of-Thought (CoT) alignment mechanism to strengthen domain reasoning. Furthermore, a visual-enhanced cross-modal encoder is incorporated and a graph-based retrieval-augmented generation (RAG) is proposed to enhance the extraction of key traffic scene characteristics and dynamic knowledge.
             </p>
           </div>
         </div>
@@ -232,35 +233,23 @@
 </section>
 
 
-<section class="hero teaser">
+<!-- Method Overview -->
+<section class="Overview">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static\images\scene understanding.png" alt="Framework" class="center-image blend-img-background"/>
-      <h2 class="subtitle has-text-centered">
-        Time-Series-Aligned Description Generation for Urban Intersection Dynamics
-      </h2>
-    </div>
-  </div>
-</section>
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static\images\incident detection.png" alt="Framework" class="center-image blend-img-background"/>
-      <h2 class="subtitle has-text-centered">
-        Traffic Incident Detection and Description Generation (Congestion)
-      </h2>
-    </div>
-  </div>
-</section>
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static\images\incident detection1.png" alt="Framework" class="center-image blend-img-background"/>
-      <h2 class="subtitle has-text-centered">
-        Traffic Incident Detection and Description Generation (Construction)
-      </h2>
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <!-- <h2 class="title is-3">Method Overview</h2> -->
+          <center>
+          <img src="static/images/2.png" alt="Framework" class="center-image blend-img-background"/>
+          </center>
+          <div class="level-set has-text-justified">
+            <p>
+              This study introduces ExpressMind, the first domain-specific MLLM designed for expressway scenarios. It is built through multiple technical innovations: a two-stage pretraining paradigm for domain knowledge internalization, a GRPO-enhanced RL framework for safety-critical reasoning alignment, a graph-augmented RAG mechanism for real-time spatiotemporal knowledge retrieval, and a VPA multimodal alignment module for deep video understanding. To support this work, we have open-sourced the first training dataset covering domain knowledge, incident CoT strategy reasoning, and multimodal incident detection VQA. The ExpressMind has been applied in top-tier expressway groups, serving as a representative application case of large models in the expressway domain.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -272,7 +261,7 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-three-quarters">
-        <h3 class="title is-3" style="text-align: center; padding-bottom: 5px; color: rgb(63	172	38)"><bold>Sample Demonstration</bold></h3>
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 5px; color: rgb(63	172	38)"><bold>Video</bold></h3>
       </div>
     </div>
   </div>
@@ -306,7 +295,7 @@
   <div class="container is-max-desktop">
     <div class="level-set has-text-justified">
       <p>
-        Here is an example from the dataset our research team has constructed – a sample sourced from The Tianjin Road Intersection Dataset. <b> Complete dataset will be made publicly available upon publication of the paper.</b>
+        The ExpressMind-VL intelligent operation system has been deployed in practical applications for multi-task scenarios on expressways. The visualization system, as shown in the figure/video, includes functions such as releasing warning information, summarizing traffic conditions, describing video events, and generating handling recommendations. We have deployed the system on the expressways in Shandong and Zhejiang provinces. In the intelligent management of Shandong expressways, ExpressMind-VL classifies the types and severity levels of traffic surveillance videos, and generates analytical reports along with handling strategies for traffic incidents. For the intelligent management of Guangdong expressways, ExpressMind-VL detects traffic events based on real-time video streams and produces structured textual descriptions for comprehension. 
       </p>
     </div>
 
@@ -323,38 +312,27 @@
         height="100%"
         style="max-width: 80%; width: auto;" <!-- 控制视频宽度 -->
       >
-        <source src="static/videos/Example.mp4" type="video/mp4">
+        <source src="static/videos/1.mp4" type="video/mp4">
       </video>
     </div>
   </div>
 
+ <!-- Method Overview -->
+<section class="Overview">
   <div class="container is-max-desktop">
-    <div class="level-set has-text-justified">
-      <p>
-        The annotations for the aforementioned example video are structured as follows: The annotation files consist of a list of dictionaries, with each entry adhering to the uniform format below: 
-      </p>
-    </div>
-    
-    <div class="container is-max-desktop content">
-      <div class="code-container11">
-        <pre><code>
-[
-  {
-    "id": 0,
-    "video": "datasets/example.mp4",
-    "conversations": [
-      {
-        "from": "human",
-        "value": "&lt;video&gt;\nClarify the contents of the displayed video with great detail."
-      },
-      {
-        "from": "gpt",
-        "value": "First, two black cars drove out of the intersection from bottom to top, and one black car drove out of the intersection from top to bottom. Next, the traffic lights turned from green to red, and a white car stopped outside the intersection at the bottom of the video. Then, multiple electric cars and cars drove through the intersection in an orderly manner. Finally, a black car turned left."
-      }
-    ]
-  }
-]
-        </code></pre>
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <!-- <h2 class="title is-3">Method Overview</h2> -->
+          <center>
+          <img src="static/images/3.jpg" alt="Framework" class="center-image blend-img-background"/>
+          </center>
+          <div class="level-set has-text-justified">
+            <p>
+              The ExpressMind-VL intelligent operation system has been deployed in practical applications for multi-task scenarios on expressways. The visualization system, as shown in the figure/video, includes functions such as releasing warning information, summarizing traffic conditions, describing video events, and generating handling recommendations. We have deployed the system on the expressways in Shandong and Zhejiang provinces. In the intelligent management of Shandong expressways, ExpressMind-VL classifies the types and severity levels of traffic surveillance videos, and generates analytical reports along with handling strategies for traffic incidents. For the intelligent management of Guangdong expressways, ExpressMind-VL detects traffic events based on real-time video streams and produces structured textual descriptions for comprehension.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
